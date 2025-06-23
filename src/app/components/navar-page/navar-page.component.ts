@@ -3,7 +3,7 @@ import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-navar-page',
-  imports: [RouterLink],
+  imports: [],
   templateUrl: './navar-page.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

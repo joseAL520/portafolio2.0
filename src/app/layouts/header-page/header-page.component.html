@@ -10,8 +10,8 @@
 
       <!-- Avatar -->
       <div class="avatar">
-        <div class="w-32 sm:w-40 md:w-48 lg:w-56 rounded-full bg-base-200 drop-shadow-lg drop-shadow-indigo-500/50">
-          <img src="/assets/imgs/user.png" alt="logo">
+        <div class="w-32 sm:w-40 md:w-48 lg:w-70 rounded-full  drop-shadow-lg drop-shadow-indigo-500/50">
+          <img src="imgs/user.webp" alt="logo">
         </div>
       </div>
 
@@ -29,8 +29,28 @@
           Aporto soluciones eficientes y escalables alineadas al negocio, <br>
           Trabajo en equipo, con enfoque analítico.
         </p>
-      </div>
 
+        <!-- Botón descargar CV -->
+        <div class="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-start gap-4">
+          <a href="/assets/docs/Jose_Angel_CV.pdf" download class="btn btn-primary gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1M7 10l5 5m0 0l5-5m-5 5V4" />
+            </svg>
+            Descargar CV
+          </a>
+
+          <!-- Íconos -->
+          <div class="flex justify-center sm:justify-start gap-3">
+            <img src="/assets/icons/angular.svg" class="w-6 h-6" alt="Angular" />
+            <img src="/assets/icons/react.svg" class="w-6 h-6" alt="React" />
+            <img src="/assets/icons/github.svg" class="w-6 h-6" alt="GitHub" />
+            <img src="/assets/icons/linkedin.svg" class="w-6 h-6" alt="LinkedIn" />
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 </div>
@@ -38,21 +58,18 @@
 <style>
 @keyframes typing {
   from { width: 0 }
-  to { width: 27ch } /* coincide con la cantidad real de caracteres */
+  to { width: 27ch }
 }
-
 @keyframes blink {
   0%, 100% { border-color: transparent }
   50% { border-color: white }
 }
-
 .animate-typing-responsive {
   animation: typing 3s steps(27, end), blink 0.75s step-end infinite;
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
   width: 100%;
-  max-width: 27ch; /* actualiza esto también */
+  max-width: 27ch;
 }
-
 </style>

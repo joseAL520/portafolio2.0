@@ -7,17 +7,18 @@
   "header": {
     "name": "Jose Angel Alvarez Beltran",
     "title": "Systems Engineer",
-    "summary": "Passionate about innovation and continuous improvement. I provide efficient and scalable solutions aligned with business goals. Team player with an analytical mindset."
+    "summary": "<span class='text-primary'>Systems Engineer</span> with knowledge and experience in <span class='text-secondary'>Angular, React, and other technologies.</span> <br> Passionate about innovation and continuous improvement. <br> I deliver efficient and scalable solutions aligned with business goals. <br> Team-oriented, with an analytical mindset.",
+    "btn":"Download CV"
   },
   "experience": {
     "title": "Experience",
     "company": "Efficode S.A.S",
     "duration": "2023 – 2024",
     "description": [
-      "Contributed to the development of web applications using Angular, React, and Node.js, following clean code and SOLID principles.",
-      "Integrated RESTful APIs and Supabase for web services.",
-      "Collaborated with UX and QA teams to improve UI and user experience.",
-      "Implemented responsive designs using CSS Grid and Flexbox."
+    "I contributed to the development of web applications using <span class='text-success font-semibold'>Angular</span>, <span class='text-success font-semibold'>React</span>, and <span class='text-success font-semibold'>Node.js</span>, applying <span class='italic'>clean code</span> and <span class='italic'>SOLID principles</span>.",
+    "I integrated <span class='text-success font-semibold'>RESTful APIs</span> and <span class='text-success font-semibold'>Supabase</span> for web services.",
+    "I collaborated with <span class='text-success font-semibold'>UX</span> and <span class='text-success font-semibold'>QA</span> teams to improve interface and user experience.",
+    "I implemented responsive designs using <span class='text-success font-semibold'>CSS Grid</span> and <span class='text-success font-semibold'>Flexbox</span>."
     ]
   },
   "education": {
@@ -30,7 +31,8 @@
     "diploma": "Diploma in IT Management",
     "diplomaDetails": "Focused on strategic IT resource management, best practices like ITIL and COBIT, and information security policies.",
     "english": "English Certification – Level B1",
-    "englishDetails": "Intermediate competence in reading, writing, and conversation in technical and professional settings."
+    "englishDetails": "Intermediate competence in reading, writing, and conversation in technical and professional settings.",
+     "btn":"View"
   },
   "projects": {
     "title": "Projects",
@@ -39,7 +41,8 @@
     "mentalPortal": "Corporate Mental Health Portal",
     "mentalPortalDesc": "Platform focused on emotional well-being in the workplace, with resources, tests, and employee tracking.",
     "interviewTool": "Technical Interview Analyzer",
-    "interviewToolDesc": "Evaluates responses in technical interviews with automated criteria and performance reports."
+    "interviewToolDesc": "Evaluates responses in technical interviews with automated criteria and performance reports.",
+    "technology":"Technologies Implemented"
   },
   "skills": {
     "title": "Skills",

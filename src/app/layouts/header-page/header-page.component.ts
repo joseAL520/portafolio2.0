@@ -1,10 +1,34 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NavarPageComponent } from "../../components/navar-page/navar-page.component";
+import { TranslateModule ,TranslateService} from '@ngx-translate/core';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-header-page',
-  imports: [NavarPageComponent],
+  imports: [NavarPageComponent,TranslateModule],
   templateUrl: './header-page.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HeaderPageComponent { }
+export class HeaderPageComponent {
+
+
+ summaryHtml: SafeHtml = ''
+
+  constructor(
+    private translate: TranslateService,
+    private sanitizer: DomSanitizer
+  ) {
+    this.loadDescriptions();
+
+    this.translate.onLangChange.subscribe(() => {
+      this.loadDescriptions();
+    });
+  }
+
+  private loadDescriptions() {
+    this.translate.get('header.summary').subscribe((text: string) => {
+      this.summaryHtml = this.sanitizer.bypassSecurityTrustHtml(text);
+    });
+  }
+ }

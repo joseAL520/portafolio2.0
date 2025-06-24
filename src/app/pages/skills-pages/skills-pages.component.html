@@ -2,17 +2,17 @@
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
     <path fill="#e1e1e1" d="M12 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/>
   </svg>
-  <h1 class="text-white font-semibold">Habilidades</h1>
+  <h1 class="text-white font-semibold">{{ 'skills.title' | translate }}</h1>
 </div>
 
 <div class="bg-base-200 rounded-2xl shadow-md p-6 w-full">
   <!-- Tecnologías -->
-  <div class="mb-6 w-fit px-4 py-2 rounded-2xl flex items-center gap-2 bg-base-100 shadow">
+  <!-- <div class="mb-6 w-fit px-4 py-2 rounded-2xl flex items-center gap-2 bg-base-100 shadow">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512">
       <path fill="#e1e1e1" d="..." />
     </svg>
-    <h1 class="text-base font-semibold text-gray-700">Tecnologías</h1>
-  </div>
+   <h1 class="text-base font-semibold text-gray-700">{{ 'skills.title' | translate }}</h1> 
+  </div> -->
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
     <!-- Front-end -->
@@ -51,7 +51,7 @@
     <section class="flex flex-col md:flex-row items-center bg-base-100 rounded-xl shadow-xl transition-transform duration-300 hover:scale-[1.02]">
       <img class="object-contain w-full md:w-48 md:h-full rounded-t-lg md:rounded-none md:rounded-s-lg bg-info" src="imgs/tools.png" alt="">
       <div class="flex flex-col justify-between p-4 w-full">
-        <h5 class="mb-4 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Herramientas</h5>
+        <h5 class="mb-4 text-xl font-bold tracking-tight text-gray-900 dark:text-white">{{ 'skills.tools' | translate }}</h5>
         <div class="flex flex-wrap gap-4">
           @for (item of tools; track $index) {
             <div class="flex flex-col items-center w-16">
@@ -67,7 +67,7 @@
     <section class="flex flex-col md:flex-row items-center bg-base-100 rounded-xl shadow-xl transition-transform duration-300 hover:scale-[1.02]">
       <img class="object-contain w-full md:w-48 md:h-full rounded-t-lg md:rounded-none md:rounded-s-lg bg-error" src="imgs/brain.png" alt="">
       <div class="flex flex-col justify-between p-4 w-full">
-        <h5 class="mb-4 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Aprendiendo</h5>
+        <h5 class="mb-4 text-xl font-bold tracking-tight text-gray-900 dark:text-white">{{ 'skills.learning' | translate }}</h5>
         <div class="flex flex-wrap gap-4">
           @for (item of nexts; track $index) {
             <div class="flex flex-col items-center w-16">
@@ -86,33 +86,36 @@
   <!-- Habilidades Blandas -->
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
     <div class="bg-base-100 rounded-box shadow-md p-4">
-      <h3 class="text-lg font-bold mb-2">Idiomas</h3>
+      <h3 class="text-lg font-bold mb-2">{{ 'languages.title' | translate }}</h3>
       <div class="flex flex-wrap gap-2">
-        <span class="badge badge-accent text-xs uppercase font-semibold">Inglés</span>
-        <span class="badge badge-primary text-xs uppercase font-semibold">Español</span>
+        <span class="badge badge-accent text-xs uppercase font-semibold">{{ 'languages.spanish' | translate }}</span>
+        <span class="badge badge-primary text-xs uppercase font-semibold">{{ 'languages.english' | translate }}</span>
       </div>
     </div>
 
     <div class="bg-base-100 rounded-box shadow-md p-4">
-      <h3 class="text-lg font-bold mb-2">Cognitivas y Personales</h3>
+      <h3 class="text-lg font-bold mb-2">{{ 'personalTraits.title' | translate }}</h3>
       <div class="flex flex-wrap gap-2">
-        <span class="badge badge-primary text-xs uppercase font-semibold">Pensamiento crítico</span>
-        <span class="badge badge-accent text-xs uppercase font-semibold">Creatividad</span>
-        <span class="badge badge-secondary text-xs uppercase font-semibold">Gestión del tiempo</span>
-        <span class="badge badge-primary text-xs uppercase font-semibold">Aprendizaje continuo</span>
+        @for (item of cognitive; track $index; let index = $index) {
+           <span
+            class="badge text-xs uppercase font-semibold"
+            [ngClass]="getBadgeClass(index)"
+            [innerHTML]="item">
+          </span>
+        }
       </div>
     </div>
 
     <div class="bg-base-100 rounded-box shadow-md p-4">
       <h3 class="text-lg font-bold mb-2">Interpersonales y Mentalidad</h3>
       <div class="flex flex-wrap gap-2">
-        <span class="badge badge-primary text-xs uppercase font-semibold">Liderazgo</span>
-        <span class="badge badge-accent text-xs uppercase font-semibold">Toma de decisiones</span>
-        <span class="badge badge-secondary text-xs uppercase font-semibold">Proactividad</span>
-        <span class="badge badge-primary text-xs uppercase font-semibold">Responsabilidad</span>
-        <span class="badge badge-accent text-xs uppercase font-semibold">Paciencia</span>
-        <span class="badge badge-secondary text-xs uppercase font-semibold">Resiliencia</span>
-        <span class="badge badge-primary text-xs uppercase font-semibold">Mentalidad de crecimiento</span>
+        @for (item of mindset; track $index; let index = $index) {
+           <span
+            class="badge text-xs uppercase font-semibold"
+            [ngClass]="getBadgeClass(index)"
+            [innerHTML]="item">
+          </span>
+        }
       </div>
     </div>
   </div>

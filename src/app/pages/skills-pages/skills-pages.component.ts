@@ -1,8 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { TranslateModule,TranslateService} from '@ngx-translate/core';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-skills-pages',
-  imports: [],
+  imports: [TranslateModule, CommonModule],
   templateUrl: './skills-pages.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
@@ -42,4 +46,52 @@ export class SkillsPagesComponent {
     { title: 'Vercel', logo: 'vercel' },
     { title: 'Docker', logo: 'docker' },
   ]
+
+
+  cognitive: SafeHtml[] = [];
+  mindset: SafeHtml[] = [];
+
+  constructor(
+    private translate: TranslateService,
+    private sanitizer: DomSanitizer
+  ) {
+    this.loadDescriptions();
+
+    this.translate.onLangChange.subscribe(() => {
+      this.loadDescriptions();
+    });
+  }
+
+  private loadDescriptions() {
+    this.translate.get('personalTraits.cognitive').subscribe((list) => {
+
+      if (Array.isArray(list)) {
+        this.cognitive = list.map((html) =>
+          this.sanitizer.bypassSecurityTrustHtml(html)
+        );
+      } else {
+        console.error('La clave "cognitive" no es un array:', list);
+        this.cognitive = [];
+      }
+    });
+
+    this.translate.get('personalTraits.mindset').subscribe((list) => {
+
+      if (Array.isArray(list)) {
+        this.mindset = list.map((html) =>
+          this.sanitizer.bypassSecurityTrustHtml(html)
+        );
+      } else {
+        console.error('La clave "mindset" no es un array:', list);
+        this.mindset = [];
+      }
+    });
+  }
+
+
+  getBadgeClass(index: number): string {
+    const classes = ['badge-accent', 'badge-primary', 'badge-secondary'];
+    return classes[index % classes.length];
+  }
+
 }

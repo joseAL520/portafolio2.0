@@ -9,7 +9,9 @@
     "title": "Systems Engineer",
     "summary": "<span class='text-primary'>Systems Engineer</span> with knowledge and experience in <span class='text-secondary'>Angular, React, and other technologies.</span> <br> Passionate about innovation and continuous improvement. <br> I deliver efficient and scalable solutions aligned with business goals. <br> Team-oriented, with an analytical mindset.",
     "btn":"Download CV",
-    "pdf":"HV-JoseING"
+    "pdf":"HV-JoseING",
+    "btn-copy":"Successful copying"
+
   },
   "experience": {
     "title": "Experience",

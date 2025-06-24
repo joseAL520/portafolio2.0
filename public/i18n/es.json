@@ -9,7 +9,8 @@
     "title": "Ingeniero de Sistemas",
     "summary": "<span class='text-primary'>Ingeniero de Sistemas</span> con conocimiento y experience con <span class='text-secondary'>Angular, React y otras Tecnologías.</span> <br> Apasionado por la innovación y mejora continua. <br>  Aporto soluciones eficientes y escalables alineadas al negocio, <br> Trabajo en equipo, con enfoque analítico.",
     "btn":"Descargar CV",
-    "pdf":"HV-JoseESP"
+    "pdf":"HV-JoseESP",
+    "btn-copy":"Copiado exitoso"
   },
   "experience": {
     "title": "Experiencia",

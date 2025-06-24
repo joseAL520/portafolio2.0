@@ -27,4 +27,12 @@ export class NavarPageComponent {
 
     this.translate.use(lang);
   }
+
+  clipboard() {
+    const textarea = "jose.albelt1817@gmail.com";
+    navigator.clipboard.writeText(textarea).then(() => {  
+    }).catch((err) => {
+      console.error('Error al copiar al portapapeles: ', err);
+    });
+  }
 }

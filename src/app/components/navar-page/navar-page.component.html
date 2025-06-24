@@ -7,22 +7,9 @@
       <ul
         tabindex="0"
         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-         <li>
-        <a>
-           Experiencia
-        </a>
-    </li>
-    <li>
-        <a>
-           Proyectos
-        </a>
-    </li>
-    
-      <li>
-      <a>
-        Habilidades
-      </a>
-    </li>
+    <li><a href="#experience" class="hover:bg-primary">{{ 'nav.experience' | translate }}</a></li>
+    <li><a href="#project" class="hover:bg-primary">{{ 'nav.projects' | translate }}</a></li>
+    <li><a href="#skills" class="hover:bg-primary">{{ 'nav.skills' | translate }}</a></li>
       </ul>
     </div>
   
@@ -87,11 +74,22 @@
     </ul>
   </div>
 
-  <div class="navbar-end hidden lg:flex">
+  <div class="navbar-end hidden lg:flex mr-8">
     <ul class="menu menu-horizontal px-1">
-      <li><a href="#experience" class="hover:bg-primary">Experiencia y educacion</a></li>
-      <li><a href="#project" class="hover:bg-primary">Proyectos</a></li>
-      <li><a href="#skills" class="hover:bg-primary">Habilidades</a></li>
+    <li><a href="#experience" class="hover:bg-primary">{{ 'nav.experience' | translate }}</a></li>
+    <li><a href="#project" class="hover:bg-primary">{{ 'nav.projects' | translate }}</a></li>
+    <li><a href="#skills" class="hover:bg-primary">{{ 'nav.skills' | translate }}</a></li>
     </ul>
   </div>
+
+ <label class="flex items-center gap-2">
+    ESP
+    <input
+      type="checkbox"
+      class="toggle border-indigo-600 bg-indigo-500 checked:border-orange-500 checked:bg-orange-400 checked:text-orange-800"
+      [checked]="isEnglish"
+      (change)="onToggle($event)"
+    />
+    ING
+  </label>
 </div>

@@ -1,0 +1,74 @@
+{
+   "nav": {
+    "experience": "Experience & Education",
+    "projects": "Projects",
+    "skills": "Skills"
+  },
+  "header": {
+    "name": "Jose Angel Alvarez Beltran",
+    "title": "Systems Engineer",
+    "summary": "Passionate about innovation and continuous improvement. I provide efficient and scalable solutions aligned with business goals. Team player with an analytical mindset."
+  },
+  "experience": {
+    "title": "Experience",
+    "company": "Efficode S.A.S",
+    "duration": "2023 – 2024",
+    "description": [
+      "Contributed to the development of web applications using Angular, React, and Node.js, following clean code and SOLID principles.",
+      "Integrated RESTful APIs and Supabase for web services.",
+      "Collaborated with UX and QA teams to improve UI and user experience.",
+      "Implemented responsive designs using CSS Grid and Flexbox."
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "university": "Corporación Universitaria del Caribe - CECAR",
+    "degree": "Systems Engineer",
+    "location": "Sincelejo, Colombia",
+    "year": "2024",
+    "details": "Focused on software development, cybersecurity, and IT platforms. Trained to lead technology projects in public and private sectors.",
+    "diploma": "Diploma in IT Management",
+    "diplomaDetails": "Focused on strategic IT resource management, best practices like ITIL and COBIT, and information security policies.",
+    "english": "English Certification – Level B1",
+    "englishDetails": "Intermediate competence in reading, writing, and conversation in technical and professional settings."
+  },
+  "projects": {
+    "title": "Projects",
+    "simulator": "Intelligent Investment Simulator",
+    "simulatorDesc": "Simulates investment strategies with custom logic, ROI analysis, and interactive visualizations.",
+    "mentalPortal": "Corporate Mental Health Portal",
+    "mentalPortalDesc": "Platform focused on emotional well-being in the workplace, with resources, tests, and employee tracking.",
+    "interviewTool": "Technical Interview Analyzer",
+    "interviewToolDesc": "Evaluates responses in technical interviews with automated criteria and performance reports."
+  },
+  "skills": {
+    "title": "Skills",
+    "frontend": "Front-end",
+    "backend": "Back-end",
+    "tools": "Tools",
+    "learning": "Learning"
+  },
+  "languages": {
+    "title": "Languages",
+    "spanish": "Spanish",
+    "english": "English"
+  },
+  "personalTraits": {
+    "title": "Personal Skills",
+    "cognitive": [
+      "Critical thinking",
+      "Creativity",
+      "Time management",
+      "Continuous learning"
+    ],
+    "mindset": [
+      "Leadership",
+      "Decision making",
+      "Proactivity",
+      "Responsibility",
+      "Patience",
+      "Resilience",
+      "Growth mindset"
+    ]
+  }
+}

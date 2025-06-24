@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "experience": "Experiencia y educación",
+    "projects": "Proyectos",
+    "skills": "Habilidades"
+  },
+  "header": {
+    "name": "Jose Angel Alvarez Beltran",
+    "title": "Ingeniero de Sistemas",
+    "summary": "Apasionado por la innovación y mejora continua. Aporto soluciones eficientes y escalables alineadas al negocio, trabajo en equipo, con enfoque analítico."
+  },
+  "experience": {
+    "title": "Experiencia",
+    "company": "Efficode S.A.S",
+    "duration": "2023 – 2024",
+    "description": [
+      "Contribuí al desarrollo de aplicaciones web usando Angular, React y Node.js, aplicando código limpio y principios SOLID.",
+      "Integré APIs RESTful y Supabase para servicios web.",
+      "Colaboré con UX y QA para mejorar la interfaz y experiencia del usuario.",
+      "Implementé diseños responsivos usando CSS Grid y Flexbox."
+    ]
+  },
+  "education": {
+    "title": "Educación",
+    "university": "Corporación Universitaria del Caribe - CECAR",
+    "degree": "Ingeniero de Sistemas",
+    "location": "Sincelejo, Colombia",
+    "year": "2024",
+    "details": "Formación enfocada en desarrollo de software, seguridad informática y plataformas tecnológicas. Capacitado para liderar proyectos tecnológicos en sectores públicos y privados.",
+    "diploma": "Diplomado en Gestión de Tecnologías de la Información",
+    "diplomaDetails": "Enfocado en la gestión estratégica de TI, buenas prácticas como ITIL y COBIT, y políticas de seguridad.",
+    "english": "Certificación de Inglés – Nivel B1",
+    "englishDetails": "Competencia intermedia en lectura, redacción y conversación en entornos técnicos y profesionales."
+  },
+  "projects": {
+    "title": "Proyectos",
+    "simulator": "Simulador de inversión inteligente",
+    "simulatorDesc": "Simula estrategias de inversión, lógica personalizada, análisis de ROI y visualizaciones interactivas.",
+    "mentalPortal": "Portal de salud mental empresarial",
+    "mentalPortalDesc": "Plataforma de bienestar emocional laboral con recursos, test y seguimiento.",
+    "interviewTool": "Analizador de entrevistas técnicas",
+    "interviewToolDesc": "Evalúa respuestas en entrevistas técnicas con criterios automatizados y reportes."
+  },
+  "skills": {
+    "title": "Habilidades",
+    "frontend": "Front-end",
+    "backend": "Back-end",
+    "tools": "Herramientas",
+    "learning": "Aprendiendo"
+  },
+  "languages": {
+    "title": "Idiomas",
+    "spanish": "Español",
+    "english": "Inglés"
+  },
+  "personalTraits": {
+    "title": "Habilidades Personales",
+    "cognitive": [
+      "Pensamiento crítico",
+      "Creatividad",
+      "Gestión del tiempo",
+      "Aprendizaje continuo"
+    ],
+    "mindset": [
+      "Liderazgo",
+      "Toma de decisiones",
+      "Proactividad",
+      "Responsabilidad",
+      "Paciencia",
+      "Resiliencia",
+      "Mentalidad de crecimiento"
+    ]
+  }
+}

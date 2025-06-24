@@ -5,37 +5,18 @@
     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 20 20" class="text-white">
       <path fill="currentColor" d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9zm3-8V2H8v1z"/>
     </svg>
-    <h1 class="text-lg font-semibold">Experiencia</h1>
+    <h1 class="text-lg font-semibold">{{ 'experience.title' | translate }}</h1>
   </div>
 
   <section class="bg-base-200 rounded-2xl p-6 shadow-md">
     <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4">
-      <h3 class="text-xl font-bold">Efficode S.A.S</h3>
-      <span class="text-sm text-gray-500">2023 – 2024</span>
+      <h3 class="text-xl font-bold">{{ 'experience.company' | translate }}</h3>
+      <span class="text-sm text-gray-500">{{ 'experience.duration' | translate }}</span>
     </div>
     <ul class="list-disc list-inside space-y-3 text-base">
-      <li>
-       Contribuí al desarrollo de aplicaciones web usando
-        <span class="text-success font-semibold">Angular</span>, 
-        <span class="text-success font-semibold">React</span> y 
-        <span class="text-success font-semibold">Node.js</span>, usando 
-        <span class="italic">código limpio</span> y 
-        <span class="italic">principios SOLID</span>.
-      </li>
-      <li>
-        Integré <span class="text-success font-semibold">APIs RESTful</span> y 
-        <span class="text-success font-semibold">Supabase</span> para servicios web.
-      </li>
-      <li>
-        Colaboré con equipos de 
-        <span class="text-success font-semibold">UX</span> y 
-        <span class="text-success font-semibold">QA</span> para mejorar la interfaz y experiencia.
-      </li>
-      <li>
-        Implementé diseños responsivos usando 
-        <span class="text-success font-semibold">CSS Grid</span> y 
-        <span class="text-success font-semibold">Flexbox</span>.
-      </li>
+      @for (desc of descriptions; track desc) {
+        <li [innerHTML]="desc"></li>
+      }
     </ul>
   </section>
 
@@ -45,7 +26,7 @@
       <path fill="currentColor" d="M23.835 8.5L12 .807L.165 8.5L12 16.192l8-5.2V16h2V9.693z"/>
       <path fill="currentColor" d="M5 17.5v-3.665l7 4.55l7-4.55V17.5c0 1.47-1.014 2.615-2.253 3.338C15.483 21.576 13.802 22 12 22s-3.482-.424-4.747-1.162C6.014 20.115 5 18.97 5 17.5"/>
     </svg>
-    <h1 class="text-lg font-semibold">Educación</h1>
+    <h1 class="text-lg font-semibold">{{ 'education.title' | translate }}</h1>
   </div>
 
   <section class="bg-base-200 rounded-2xl p-6 shadow-md">
@@ -55,31 +36,31 @@
       <li class="flex flex-col md:flex-row gap-4 items-start list-row">
         <img class="size-12 rounded-lg" src="imgs/logocecar.png" alt="Logo CECAR"/>
         <div class="flex-1">
-          <div class="text-xl font-bold uppercase">Corporación Universitaria del Caribe - CECAR</div>
+          <div class="text-xl font-bold uppercase">{{ 'education.university' | translate }}</div>
 
           <div class="mt-2">
-            <p class="uppercase font-semibold">Ingeniero de Sistemas</p>
-            <span class="block text-sm opacity-70 mb-1">Sincelejo - Colombia [2024]</span>
+            <p class="uppercase font-semibold">{{ 'education.degree' | translate }}</p>
+            <span class="block text-sm opacity-70 mb-1">{{ 'education.location' | translate }} - {{ 'education.year' | translate }}</span>
             <p>
-              Formación enfocada en el desarrollo Software,web, seguridad informática. Preparado para desempeñarse en sectores públicos y privados, con capacidad para desarrollar soluciones tecnológicas, administrar plataformas informáticas y liderar proyectos de ingeniería.
+             {{ 'education.details' | translate }}
             </p>
-            <button class="badge badge-outline badge-accent mt-2 btn">Ver</button>
+            <button class="badge badge-outline badge-accent mt-2 btn">{{ 'education.btn' | translate }}</button>
           </div>
 
           <div class="mt-4">
-            <p class="uppercase font-semibold">Diplomado en Gestión de Tecnologías de la Información</p>
+            <p class="uppercase font-semibold">{{ 'education.diploma' | translate }}</p>
             <p>
-              Formación en la gestión estratégica de recursos tecnológicos, con énfasis en la alineación de TI con los objetivos del negocio, implementación de buenas prácticas (ITIL, COBIT) y fortalecimiento de políticas de seguridad de la información.
+              {{ 'education.diplomaDetails' | translate }}
             </p>
-            <button class="badge badge-outline badge-accent mt-2 btn">Ver</button>
+            <button class="badge badge-outline badge-accent mt-2 btn">{{ 'education.btn' | translate }}</button>
           </div>
 
           <div class="mt-4">
-            <p class="uppercase font-semibold">Certificación de Inglés – Nivel B1</p>
+            <p class="uppercase font-semibold">{{ 'education.english' | translate }}</p>
             <p>
-              Certificado de competencia en comprensión lectora, redacción y conversación en inglés a nivel intermedio, con enfoque en entornos profesionales y técnicos.
+             {{ 'education.englishDetails' | translate }}
             </p>
-            <button class="badge badge-outline badge-accent mt-2 btn">Ver</button>
+            <button class="badge badge-outline badge-accent mt-2 btn">{{ 'education.btn' | translate }}</button>
           </div>
         </div>
       </li>
@@ -93,22 +74,22 @@
           <div class="mt-2">
             <p class="uppercase font-semibold">Angular: De cero a experto - 2024 </p>
            
-            <button class="badge badge-outline badge-accent mt-2 btn">Ver</button>
+            <button class="badge badge-outline badge-accent mt-2 btn">{{ 'education.btn' | translate }}</button>
           </div>
 
           <div class="mt-4">
             <p class="uppercase font-semibold">TypeScript: Tu completa guía - 2024 </p>      
-            <button class="badge badge-outline badge-accent mt-2 btn">Ver</button>
+            <button class="badge badge-outline badge-accent mt-2 btn">{{ 'education.btn' | translate }}</button>
           </div>
 
           <div class="mt-4">
             <p class="uppercase font-semibold">GIT + GitHub: Control de versiones - 2024 </p>
-            <button class="badge badge-outline badge-accent mt-2 btn">Ver</button>
+            <button class="badge badge-outline badge-accent mt-2 btn">{{ 'education.btn' | translate }}</button>
           </div>
 
           <div class="mt-4">
             <p class="uppercase font-semibold">JavaScript Moderno - 2022 </p>
-            <button class="badge badge-outline badge-accent mt-2 btn">Ver</button>
+            <button class="badge badge-outline badge-accent mt-2 btn">{{ 'education.btn' | translate }}</button>
           </div>
         </div>
       </li>

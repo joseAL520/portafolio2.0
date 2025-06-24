@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "experience": "Experiencia y educación",
+    "projects": "Proyectos",
+    "skills": "Habilidades"
+  },
+  "header": {
+    "name": "Jose Angel Alvarez Beltran",
+    "title": "Ingeniero de Sistemas",
+    "summary": "<span class='text-primary'>Ingeniero de Sistemas</span> con conocimiento y experience con <span class='text-secondary'>Angular, React y otras Tecnologías.</span> <br> Apasionado por la innovación y mejora continua. <br>  Aporto soluciones eficientes y escalables alineadas al negocio, <br> Trabajo en equipo, con enfoque analítico.",
+    "btn":"Descargar CV"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "company": "Efficode S.A.S",
+    "duration": "2023 – 2024",
+    "description": [
+     "Contribuí al desarrollo de aplicaciones web usando <span class='text-success font-semibold'>Angular</span>, <span class='text-success font-semibold'>React</span> y <span class='text-success font-semibold'>Node.js</span>, aplicando <span class='italic'>código limpio</span> y <span class='italic'>principios SOLID</span>.",
+    "Integré <span class='text-success font-semibold'>APIs RESTful</span> y <span class='text-success font-semibold'>Supabase</span> para servicios web.",
+    "Colaboré con equipos de <span class='text-success font-semibold'>UX</span> y <span class='text-success font-semibold'>QA</span> para mejorar la interfaz y experiencia.",
+    "Implementé diseños responsivos usando <span class='text-success font-semibold'>CSS Grid</span> y <span class='text-success font-semibold'>Flexbox</span>."
+  ]
+  },
+  "education": {
+    "title": "Educación",
+    "university": "Corporación Universitaria del Caribe - CECAR",
+    "degree": "Ingeniero de Sistemas",
+    "location": "Sincelejo, Colombia",
+    "year": "2024",
+    "details": "Formación enfocada en desarrollo de software, seguridad informática y plataformas tecnológicas. Capacitado para liderar proyectos tecnológicos en sectores públicos y privados.",
+    "diploma": "Diplomado en Gestión de Tecnologías de la Información",
+    "diplomaDetails": "Enfocado en la gestión estratégica de TI, buenas prácticas como ITIL y COBIT, y políticas de seguridad.",
+    "english": "Certificación de Inglés – Nivel B1",
+    "englishDetails": "Competencia intermedia en lectura, redacción y conversación en entornos técnicos y profesionales.",
+    "btn":"Ver"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "simulator": "Simulador de inversión inteligente",
+    "simulatorDesc": "Simula estrategias de inversión, lógica personalizada, análisis de ROI y visualizaciones interactivas.",
+    "mentalPortal": "Portal de salud mental empresarial",
+    "mentalPortalDesc": "Plataforma de bienestar emocional laboral con recursos, test y seguimiento.",
+    "interviewTool": "Analizador de entrevistas técnicas",
+    "interviewToolDesc": "Evalúa respuestas en entrevistas técnicas con criterios automatizados y reportes.",
+    "technology":"Tecnologías Implementada "
+  },
+  "skills": {
+    "title": "Habilidades",
+    "frontend": "Front-end",
+    "backend": "Back-end",
+    "tools": "Herramientas",
+    "learning": "Aprendiendo"
+  },
+  "languages": {
+    "title": "Idiomas",
+    "spanish": "Español",
+    "english": "Inglés"
+  },
+  "personalTraits": {
+    "title": "Habilidades Personales",
+    "cognitive": [
+      "Pensamiento crítico",
+      "Creatividad",
+      "Gestión del tiempo",
+      "Aprendizaje continuo"
+    ],
+    "mindset": [
+      "Liderazgo",
+      "Toma de decisiones",
+      "Proactividad",
+      "Responsabilidad",
+      "Paciencia",
+      "Resiliencia",
+      "Mentalidad de crecimiento"
+    ]
+  }
+}

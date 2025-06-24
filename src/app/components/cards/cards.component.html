@@ -14,9 +14,10 @@
         </div>
 
         <!-- Tech Icons -->
+        <p class="text-sm mt-2">{{'projects.technology' | translate}}</p>
         <div class="flex flex-wrap gap-2 mt-3">
           @for (icon of item.techIcons; track $index) {
-            <img [src]="icon" alt="icon" class="w-6 h-6" />
+            <img [src]="[`icons/${icon}.png`]" alt="icon" class="w-6 h-6" />
           }
         </div>
 

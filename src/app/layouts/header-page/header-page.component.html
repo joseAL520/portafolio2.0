@@ -10,7 +10,7 @@
 
       <!-- Avatar -->
       <div class="avatar">
-        <div class="w-32 sm:w-40 md:w-48 lg:w-70 rounded-full  drop-shadow-lg drop-shadow-indigo-500/50">
+        <div class="bg-base-100 w-32 sm:w-40 md:w-48 lg:w-70 rounded-full  drop-shadow-lg drop-shadow-indigo-500/50">
           <img src="imgs/user.webp" alt="logo">
         </div>
       </div>
@@ -18,35 +18,33 @@
       <!-- Texto -->
       <div class="w-full max-w-xl text-center lg:text-left">
         <h1 class="text-white text-xl sm:text-2xl md:text-3xl font-mono border-r-2 border-white animate-typing-responsive mx-auto lg:mx-0 leading-tight">
-          Jose Angel Alvarez Beltran
+          {{ 'header.name' | translate }}
         </h1>
 
-        <p class="py-4 text-white text-xs sm:text-sm md:text-base leading-snug">
-          <strong class="text-primary">Ingeniero de Sistemas</strong>
-          con experiencia en
-          <span class="text-secondary">Angular, React y otras Tecnologías.</span> <br>
-          Apasionado por la innovación y mejora continua. <br> 
-          Aporto soluciones eficientes y escalables alineadas al negocio, <br>
-          Trabajo en equipo, con enfoque analítico.
-        </p>
+       <p class="text-white text-xs sm:text-sm md:text-base leading-snug" [innerHTML]="summaryHtml"></p>
+
 
         <!-- Botón descargar CV -->
         <div class="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-start gap-4">
+          
+          <div class="flex justify-center sm:justify-start gap-3">
+            <img src="icons/rxjs.png" class="w-6 h-6" alt="Angular" />
+            <img src="icons/tailwindcss.png" class="w-6 h-6" alt="React" />
+          </div>
+
           <a href="/assets/docs/Jose_Angel_CV.pdf" download class="btn btn-primary gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1M7 10l5 5m0 0l5-5m-5 5V4" />
             </svg>
-            Descargar CV
+             {{ 'header.btn' | translate }}
           </a>
 
           <!-- Íconos -->
           <div class="flex justify-center sm:justify-start gap-3">
-            <img src="/assets/icons/angular.svg" class="w-6 h-6" alt="Angular" />
-            <img src="/assets/icons/react.svg" class="w-6 h-6" alt="React" />
-            <img src="/assets/icons/github.svg" class="w-6 h-6" alt="GitHub" />
-            <img src="/assets/icons/linkedin.svg" class="w-6 h-6" alt="LinkedIn" />
+            <img src="icons/angular.png" class="w-6 h-6" alt="Angular" />
+            <img src="icons/react.png" class="w-6 h-6" alt="React" />
           </div>
         </div>
 

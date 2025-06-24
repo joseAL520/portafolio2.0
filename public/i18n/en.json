@@ -1,0 +1,77 @@
+{
+   "nav": {
+    "experience": "Experience & Education",
+    "projects": "Projects",
+    "skills": "Skills"
+  },
+  "header": {
+    "name": "Jose Angel Alvarez Beltran",
+    "title": "Systems Engineer",
+    "summary": "<span class='text-primary'>Systems Engineer</span> with knowledge and experience in <span class='text-secondary'>Angular, React, and other technologies.</span> <br> Passionate about innovation and continuous improvement. <br> I deliver efficient and scalable solutions aligned with business goals. <br> Team-oriented, with an analytical mindset.",
+    "btn":"Download CV"
+  },
+  "experience": {
+    "title": "Experience",
+    "company": "Efficode S.A.S",
+    "duration": "2023 – 2024",
+    "description": [
+    "I contributed to the development of web applications using <span class='text-success font-semibold'>Angular</span>, <span class='text-success font-semibold'>React</span>, and <span class='text-success font-semibold'>Node.js</span>, applying <span class='italic'>clean code</span> and <span class='italic'>SOLID principles</span>.",
+    "I integrated <span class='text-success font-semibold'>RESTful APIs</span> and <span class='text-success font-semibold'>Supabase</span> for web services.",
+    "I collaborated with <span class='text-success font-semibold'>UX</span> and <span class='text-success font-semibold'>QA</span> teams to improve interface and user experience.",
+    "I implemented responsive designs using <span class='text-success font-semibold'>CSS Grid</span> and <span class='text-success font-semibold'>Flexbox</span>."
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "university": "Corporación Universitaria del Caribe - CECAR",
+    "degree": "Systems Engineer",
+    "location": "Sincelejo, Colombia",
+    "year": "2024",
+    "details": "Focused on software development, cybersecurity, and IT platforms. Trained to lead technology projects in public and private sectors.",
+    "diploma": "Diploma in IT Management",
+    "diplomaDetails": "Focused on strategic IT resource management, best practices like ITIL and COBIT, and information security policies.",
+    "english": "English Certification – Level B1",
+    "englishDetails": "Intermediate competence in reading, writing, and conversation in technical and professional settings.",
+     "btn":"View"
+  },
+  "projects": {
+    "title": "Projects",
+    "simulator": "Intelligent Investment Simulator",
+    "simulatorDesc": "Simulates investment strategies with custom logic, ROI analysis, and interactive visualizations.",
+    "mentalPortal": "Corporate Mental Health Portal",
+    "mentalPortalDesc": "Platform focused on emotional well-being in the workplace, with resources, tests, and employee tracking.",
+    "interviewTool": "Technical Interview Analyzer",
+    "interviewToolDesc": "Evaluates responses in technical interviews with automated criteria and performance reports.",
+    "technology":"Technologies Implemented"
+  },
+  "skills": {
+    "title": "Skills",
+    "frontend": "Front-end",
+    "backend": "Back-end",
+    "tools": "Tools",
+    "learning": "Learning"
+  },
+  "languages": {
+    "title": "Languages",
+    "spanish": "Spanish",
+    "english": "English"
+  },
+  "personalTraits": {
+    "title": "Personal Skills",
+    "cognitive": [
+      "Critical thinking",
+      "Creativity",
+      "Time management",
+      "Continuous learning"
+    ],
+    "mindset": [
+      "Leadership",
+      "Decision making",
+      "Proactivity",
+      "Responsibility",
+      "Patience",
+      "Resilience",
+      "Growth mindset"
+    ]
+  }
+}

@@ -45,6 +45,7 @@ export class SkillsPagesComponent {
     { title: 'Node.js', logo: 'nodejs' },
     { title: 'Vercel', logo: 'vercel' },
     { title: 'Docker', logo: 'docker' },
+    { title: 'C1 English', logo: 'translate' },
   ]
 
 

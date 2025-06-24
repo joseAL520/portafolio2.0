@@ -31,14 +31,18 @@
             <img src="icons/rxjs.png" class="w-6 h-6" alt="Angular" />
             <img src="icons/tailwindcss.png" class="w-6 h-6" alt="React" />
           </div>
-
-          <a href="/assets/docs/Jose_Angel_CV.pdf" download class="btn btn-primary gap-2">
+          <a class="btn btn-primary gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1M7 10l5 5m0 0l5-5m-5 5V4" />
-            </svg>
-             {{ 'header.btn' | translate }}
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1M7 10l5 5m0 0l5-5m-5 5V4" />
+          </svg>
+         
+          <app-pdf   
+            [infPdf]=" 'header.pdf' | translate " 
+            [infText]="   'header.btn' | translate  "
+            [typePdf]="'CV'"
+            ></app-pdf>
           </a>
 
           <!-- Íconos -->

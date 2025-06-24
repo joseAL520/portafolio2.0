@@ -1,0 +1,15 @@
+
+@if (typePdf==='CV') {
+  <button
+    (click)="abrirPDF()">
+    {{infText}}
+  </button>
+}
+
+@if(typePdf==='other'){
+ <button (click)="abrirPDFConMarcaDeAgua()">
+   {{infText}}
+</button>
+}
+
+

@@ -44,15 +44,28 @@
             <p>
              {{ 'education.details' | translate }}
             </p>
-            <button class="badge badge-outline badge-accent mt-2 btn">{{ 'education.btn' | translate }}</button>
+            <button class="badge badge-outline badge-accent mt-2 btn">
+            <app-pdf   
+            [infPdf]=" 'education.pdf-diploma' | translate " 
+            [infText]=" 'education.btn' | translate  "
+            [typePdf]="'other'"
+            ></app-pdf>
+            </button>
           </div>
 
           <div class="mt-4">
             <p class="uppercase font-semibold">{{ 'education.diploma' | translate }}</p>
+            <span class="block text-sm opacity-70 mb-1">{{ 'education.location' | translate }} - 2023</span>
             <p>
               {{ 'education.diplomaDetails' | translate }}
             </p>
-            <button class="badge badge-outline badge-accent mt-2 btn">{{ 'education.btn' | translate }}</button>
+            <button class="badge badge-outline badge-accent mt-2 btn">
+                <app-pdf   
+                [infPdf]=" 'education.pdf-certGTI' | translate " 
+                [infText]=" 'education.btn' | translate  "
+                [typePdf]="'other'"
+              ></app-pdf>
+            </button>
           </div>
 
           <div class="mt-4">
@@ -60,7 +73,13 @@
             <p>
              {{ 'education.englishDetails' | translate }}
             </p>
-            <button class="badge badge-outline badge-accent mt-2 btn">{{ 'education.btn' | translate }}</button>
+            <button class="badge badge-outline badge-accent mt-2 btn">
+              <app-pdf   
+                [infPdf]=" 'education.pdf-certB1' | translate " 
+                [infText]=" 'education.btn' | translate  "
+                [typePdf]="'other'"
+              ></app-pdf>
+            </button>
           </div>
         </div>
       </li>
@@ -74,27 +93,26 @@
           <div class="mt-2">
             <p class="uppercase font-semibold">Angular: De cero a experto - 2024 </p>
            
-            <button class="badge badge-outline badge-accent mt-2 btn">{{ 'education.btn' | translate }}</button>
+            <button class="badge badge-outline badge-accent mt-2 btn"> <a href="https://www.udemy.com/certificate/UC-0bc05e42-48ff-4895-ad2c-bccecb636930/" target="_blank">{{ 'education.btn' | translate }}</a> </button>
           </div>
 
           <div class="mt-4">
             <p class="uppercase font-semibold">TypeScript: Tu completa guía - 2024 </p>      
-            <button class="badge badge-outline badge-accent mt-2 btn">{{ 'education.btn' | translate }}</button>
+            <button class="badge badge-outline badge-accent mt-2 btn"> <a href="https://www.udemy.com/certificate/UC-6e4899ef-373b-43db-972f-d3c6c0eedd20/" target="_blank">{{ 'education.btn' | translate }}</a> </button>
           </div>
 
           <div class="mt-4">
             <p class="uppercase font-semibold">GIT + GitHub: Control de versiones - 2024 </p>
-            <button class="badge badge-outline badge-accent mt-2 btn">{{ 'education.btn' | translate }}</button>
+            <button class="badge badge-outline badge-accent mt-2 btn"> <a href="https://www.udemy.com/certificate/UC-48b5ffdb-aed8-4e44-8b8f-b98f4f80dbaf/" target="_blank">{{ 'education.btn' | translate }}</a> </button>
           </div>
 
           <div class="mt-4">
             <p class="uppercase font-semibold">JavaScript Moderno - 2022 </p>
-            <button class="badge badge-outline badge-accent mt-2 btn">{{ 'education.btn' | translate }}</button>
+            <button class="badge badge-outline badge-accent mt-2 btn"> <a href="https://www.udemy.com/certificate/UC-e0a9440f-f69f-4073-9398-47cb8c330135/" target="_blank">{{ 'education.btn' | translate }}</a> </button>
           </div>
         </div>
       </li>
 
     </ul>
   </section>
-
 </div>

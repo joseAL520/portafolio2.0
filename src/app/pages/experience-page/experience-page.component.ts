@@ -1,11 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { TranslateModule,TranslateService  } from '@ngx-translate/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { PdfComponent } from "../../components/pdf-components/pdf.component";
 
 
 @Component({
   selector: 'app-experience-page',
-  imports: [TranslateModule],
+  imports: [TranslateModule, PdfComponent],
   templateUrl: './experience-page.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

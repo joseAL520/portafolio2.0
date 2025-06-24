@@ -1,12 +1,13 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { NavarPageComponent } from "../../components/navar-page/navar-page.component";
 import { TranslateModule ,TranslateService} from '@ngx-translate/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { PdfComponent } from "../../components/pdf-components/pdf.component";
 
 
 @Component({
   selector: 'app-header-page',
-  imports: [NavarPageComponent,TranslateModule],
+  imports: [NavarPageComponent, TranslateModule, PdfComponent],
   templateUrl: './header-page.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

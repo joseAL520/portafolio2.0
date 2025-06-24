@@ -8,7 +8,8 @@
     "name": "Jose Angel Alvarez Beltran",
     "title": "Ingeniero de Sistemas",
     "summary": "<span class='text-primary'>Ingeniero de Sistemas</span> con conocimiento y experience con <span class='text-secondary'>Angular, React y otras Tecnologías.</span> <br> Apasionado por la innovación y mejora continua. <br>  Aporto soluciones eficientes y escalables alineadas al negocio, <br> Trabajo en equipo, con enfoque analítico.",
-    "btn":"Descargar CV"
+    "btn":"Descargar CV",
+    "pdf":"HV-JoseESP"
   },
   "experience": {
     "title": "Experiencia",
@@ -32,7 +33,10 @@
     "diplomaDetails": "Enfocado en la gestión estratégica de TI, buenas prácticas como ITIL y COBIT, y políticas de seguridad.",
     "english": "Certificación de Inglés – Nivel B1",
     "englishDetails": "Competencia intermedia en lectura, redacción y conversación en entornos técnicos y profesionales.",
-    "btn":"Ver"
+    "btn":"View",
+    "pdf-diploma":"DiplomaIng",
+    "pdf-certGTI":"CertGTI",
+    "pdf-certB1":"CerB1Ing"
   },
   "projects": {
     "title": "Proyectos",

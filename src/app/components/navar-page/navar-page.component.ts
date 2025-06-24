@@ -24,7 +24,7 @@ export class NavarPageComponent {
   }
 
   changeLang(lang: string) {
-    console.log(lang)
+
     this.translate.use(lang);
   }
 }

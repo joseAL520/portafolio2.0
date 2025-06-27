@@ -31,10 +31,10 @@ export class ProjectsPageComponent {
         {
           title: t['projects.simulator'],
           description: t['projects.simulatorDesc'],
-          imageUrl: 'https://images.unsplash.com/photo-1659079631665-eb95370fb173?q=80&w=1630',
-          techIcons: ['angular', 'mundo'],
-          github: 'https://github.com/joseAL520/Dash',
-          liveDemo: 'https://joseal520.github.io/Dash/'
+          imageUrl: 'imgs/invesmet.png',
+          techIcons: ['react', 'daisyui-icon','supabase','tailwindcss'],
+          github: 'https://github.com/joseAL520/Investment-Simulator',
+          liveDemo: 'https://investment-simulator-d4dq.vercel.app/'
         },
         {
           title: t['projects.mentalPortal'],
